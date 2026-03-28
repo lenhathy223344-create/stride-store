@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STRIDĒ — Giày Chính Hãng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Le_Nhat_Hy.css">
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announce">Miễn phí vận chuyển cho đơn từ 500.000 ₫ &nbsp;·&nbsp; Đổi trả 30 ngày không cần lý do</div>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo" onclick="showPage('home')">STRIDĒ</a>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showPage('home')">Trang chủ</a></li>
+      <li><a href="#" onclick="showPage('products')">Sản phẩm</a></li>
+      <li><a href="#" onclick="showPage('detail')">Chi tiết</a></li>
+      <li><a href="#" onclick="showPage('home')">Bộ sưu tập</a></li>
+      <li><a href="#" onclick="showPage('home')">Sale</a></li>
+    </ul>
+    <div class="nav-icons">
+      <button title="Tìm kiếm">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+      </button>
+      <button title="Tài khoản">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <button title="Giỏ hàng" onclick="showToast('Giỏ hàng của bạn đang trống')">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Tabs (visible indicator) -->
+<div style="background:var(--gray-100); border-bottom:1px solid var(--gray-200);">
+  <div class="page-tabs">
+    <div class="page-tab active" id="tab-home" onclick="showPage('home')">Trang chủ</div>
+    <div class="page-tab" id="tab-products" onclick="showPage('products')">Danh mục</div>
+    <div class="page-tab" id="tab-detail" onclick="showPage('detail')">Chi tiết SP</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE 1: HOME
+══════════════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow fade-up">Bộ sưu tập 2025</div>
+      <h1 class="hero-title fade-up delay-1">
+        Bước đi<br>
+        theo <em>phong cách</em><br>
+        của bạn
+      </h1>
+      <p class="hero-subtitle fade-up delay-2">
+        Khám phá những đôi giày được thiết kế cho cuộc sống hiện đại — tối giản, bền bỉ và đẳng cấp.
+      </p>
+      <div class="hero-cta fade-up delay-3">
+        <a href="#" class="btn btn-dark" onclick="showPage('products')">
+          Khám phá ngay <span class="btn-arrow">→</span>
+        </a>
+        <a href="#" class="btn btn-ghost">Xem lookbook</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="shoe-wrap">
+        <svg width="380" height="260" viewBox="0 0 380 260" fill="none">
+          <!-- Shadow -->
+          <ellipse cx="190" cy="220" rx="150" ry="18" fill="#D3D1C7" opacity=".6"/>
+          <!-- Main shoe -->
+          <g transform="rotate(-12 190 140)">
+            <!-- Sole -->
+            <rect x="50" y="160" width="280" height="26" rx="6" fill="#111"/>
+            <!-- Body -->
+            <rect x="44" y="134" width="290" height="30" rx="8" fill="#1a1a1a"/>
+            <!-- Upper -->
+            <path d="M80 134 C80 65 120 52 190 54 C260 52 295 72 300 134Z" fill="#222"/>
+            <!-- Tongue -->
+            <path d="M155 134 C155 90 170 80 185 82 C200 80 215 95 215 134Z" fill="#1f1f1f"/>
+            <!-- Laces -->
+            <rect x="158" y="96" width="64" height="2.5" rx="1.25" fill="#fff" opacity=".2"/>
+            <rect x="158" y="106" width="64" height="2.5" rx="1.25" fill="#fff" opacity=".18"/>
+            <rect x="158" y="116" width="64" height="2.5" rx="1.25" fill="#fff" opacity=".14"/>
+            <rect x="158" y="126" width="64" height="2.5" rx="1.25" fill="#fff" opacity=".1"/>
+            <!-- Swoosh / accent -->
+            <path d="M240 110 L295 138" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".05"/>
+            <!-- Eyelets -->
+            <circle cx="158" cy="97" r="3" fill="#333"/>
+            <circle cx="222" cy="97" r="3" fill="#333"/>
+            <circle cx="158" cy="107" r="3" fill="#333"/>
+            <circle cx="222" cy="107" r="3" fill="#333"/>
+            <!-- Heel counter -->
+            <path d="M280 80 C290 90 300 110 300 134" stroke="#333" stroke-width="3" fill="none"/>
+            <!-- Toe cap -->
+            <path d="M80 110 C75 118 72 128 72 140" stroke="#2a2a2a" stroke-width="2" fill="none"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hero-badge">SS 2025</div>
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        Cuộn xuống
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <div class="brands">
+    <div class="brands-inner">
+      <span class="brand-name">Nike</span>
+      <span class="brand-name">Adidas</span>
+      <span class="brand-name">New Balance</span>
+      <span class="brand-name">Vans</span>
+      <span class="brand-name">Converse</span>
+      <span class="brand-name">Puma</span>
+    </div>
+  </div>
+
+  <!-- Featured Products -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sản phẩm nổi bật</h2>
+        <a href="#" class="section-link" onclick="showPage('products')">Xem tất cả →</a>
+      </div>
+      <div class="products">
+
+        <div class="product-card" onclick="showPage('detail')">
+          <div class="product-img bg-gray">
+            <span class="product-badge badge-new">Mới</span>
+            <button class="product-wish" onclick="event.stopPropagation(); toggleWish(this)">
+              <svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <svg width="130" height="80" viewBox="0 0 130 80" fill="none">
+              <ellipse cx="65" cy="72" rx="56" ry="7" fill="#D3D1C7" opacity=".6"/>
+              <g transform="rotate(-10 65 40)">
+                <rect x="12" y="47" width="106" height="16" rx="5" fill="#111"/>
+                <rect x="8" y="34" width="114" height="16" rx="7" fill="#1a1a1a"/>
+                <path d="M24 34 C24 8 38 4 65 5 C92 4 105 12 106 34Z" fill="#222"/>
+                <rect x="38" y="12" width="42" height="2" rx="1" fill="#fff" opacity=".2"/>
+                <rect x="38" y="19" width="42" height="2" rx="1" fill="#fff" opacity=".15"/>
+                <rect x="38" y="26" width="42" height="2" rx="1" fill="#fff" opacity=".1"/>
+              </g>
+            </svg>
+          </div>
+          <div class="product-brand">Nike</div>
+          <div class="product-name">Air Runner Pro</div>
+          <div class="product-price-row">
+            <span class="product-price">1.850.000 ₫</span>
+          </div>
+        </div>
+
+        <div class="product-card" onclick="showPage('detail')">
+          <div class="product-img bg-dark">
+            <span class="product-badge badge-new">Mới</span>
+            <button class="product-wish" onclick="event.stopPropagation(); toggleWish(this)">
+              <svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <svg width="130" height="80" viewBox="0 0 130 80" fill="none">
+              <ellipse cx="65" cy="72" rx="56" ry="7" fill="#888" opacity=".3"/>
+              <g transform="rotate(-10 65 40)">
+                <rect x="12" y="47" width="106" height="16" rx="5" fill="#444"/>
+                <rect x="8" y="34" width="114" height="16" rx="7" fill="#555"/>
+                <path d="M24 34 C24 8 38 4 65 5 C92 4 105 12 106 34Z" fill="#666"/>
+                <rect x="38" y="12" width="42" height="2" rx="1" fill="#fff" opacity=".25"/>
+                <rect x="38" y="19" width="42" height="2" rx="1" fill="#fff" opacity=".2"/>
+                <rect x="38" y="26" width="42" height="2" rx="1" fill="#fff" opacity=".15"/>
+                <path d="M78 38 L108 48" stroke="#888" stroke-width="8" stroke-linecap="round" opacity=".4"/>
+              </g>
+            </svg>
+          </div>
+          <div class="product-brand">Adidas</div>
+          <div class="product-name">Ultraboost 5.0</div>
+          <div class="product-price-row">
+            <span class="product-price">2.350.000 ₫</span>
+          </div>
+        </div>
+
+        <div class="product-card" onclick="showPage('detail')">
+          <div class="product-img bg-warm">
+            <span class="product-badge badge-sale">-20%</span>
+            <button class="product-wish" onclick="event.stopPropagation(); toggleWish(this)">
+              <svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <svg width="130" height="80" viewBox="0 0 130 80" fill="none">
+              <ellipse cx="65" cy="72" rx="56" ry="7" fill="#BA7517" opacity=".3"/>
+              <g transform="rotate(-10 65 40)">
+                <rect x="12" y="47" width="106" height="16" rx="5" fill="#633806"/>
+                <rect x="8" y="34" width="114" height="16" rx="7" fill="#854F0B"/>
+                <path d="M24 34 C24 8 38 4 65 5 C92 4 105 12 106 34Z" fill="#BA7517"/>
+                <rect x="38" y="12" width="42" height="2" rx="1" fill="#fff" opacity=".25"/>
+                <rect x="38" y="19" width="42" height="2" rx="1" fill="#fff" opacity=".2"/>
+                <rect x="38" y="26" width="42" height="2" rx="1" fill="#fff" opacity=".15"/>
+              </g>
+            </svg>
+          </div>
+          <div class="product-brand">New Balance</div>
+          <div class="product-name">574 Classic</div>
+          <div class="product-price-row">
+            <span class="product-price">1.480.000 ₫</span>
+            <span class="product-price-old">1.850.000 ₫</span>
+          </div>
+        </div>
+
+        <div class="product-card" onclick="showPage('detail')">
+          <div class="product-img bg-blue">
+            <button class="product-wish" onclick="event.stopPropagation(); toggleWish(this)">
+              <svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <svg width="130" height="80" viewBox="0 0 130 80" fill="none">
+              <ellipse cx="65" cy="72" rx="56" ry="7" fill="#378ADD" opacity=".3"/>
+              <g transform="rotate(-10 65 40)">
+                <rect x="12" y="47" width="106" height="16" rx="5" fill="#0C447C"/>
+                <rect x="8" y="34" width="114" height="16" rx="7" fill="#185FA5"/>
+                <path d="M24 34 C24 8 38 4 65 5 C92 4 105 12 106 34Z" fill="#378ADD"/>
+                <rect x="38" y="12" width="42" height="2" rx="1" fill="#fff" opacity=".3"/>
+                <rect x="38" y="19" width="42" height="2" rx="1" fill="#fff" opacity=".25"/>
+                <rect x="38" y="26" width="42" height="2" rx="1" fill="#fff" opacity=".2"/>
+                <rect x="14" y="40" width="96" height="3" rx="1.5" fill="#fff" opacity=".08"/>
+              </g>
+            </svg>
+          </div>
+          <div class="product-brand">Vans</div>
+          <div class="product-name">Old Skool Classic</div>
+          <div class="product-price-row">
+            <span class="product-price">1.200.000 ₫</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="banner-text">
+      <div class="banner-eyebrow">Ưu đãi đặc biệt</div>
+      <h2 class="banner-title">Bộ sưu tập<br><em>Thu Đông</em><br>giảm đến 30%</h2>
+      <p class="banner-sub">Cơ hội cuối cùng sở hữu những đôi giày xu hướng với mức giá tốt nhất trong năm.</p>
+      <button class="btn btn-white" onclick="showPage('products')">Mua ngay →</button>
+    </div>
+    <div class="banner-visual">
+      <svg width="340" height="260" viewBox="0 0 340 260" fill="none">
+        <ellipse cx="170" cy="220" rx="130" ry="15" fill="#333" opacity=".6"/>
+        <g transform="rotate(-15 170 130)">
+          <rect x="42" y="148" width="256" height="24" rx="6" fill="#333"/>
+          <rect x="36" y="124" width="268" height="28" rx="9" fill="#3a3a3a"/>
+          <path d="M72 124 C72 58 108 44 170 46 C232 44 268 64 268 124Z" fill="#444"/>
+          <rect x="116" y="60" width="68" height="2.5" rx="1.25" fill="#fff" opacity=".15"/>
+          <rect x="116" y="70" width="68" height="2.5" rx="1.25" fill="#fff" opacity=".12"/>
+          <rect x="116" y="80" width="68" height="2.5" rx="1.25" fill="#fff" opacity=".1"/>
+          <path d="M220 100 L268 126" stroke="#fff" stroke-width="20" stroke-linecap="round" opacity=".04"/>
+        </g>
+        <text x="60" y="50" fill="#333" font-size="60" font-family="serif" font-style="italic" opacity=".3">-30%</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">
+        <svg width="18" height="18" fill="none" stroke="var(--black)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      </div>
+      <div class="feature-title">Miễn phí vận chuyển</div>
+      <div class="feature-sub">Đơn hàng từ 500.000 ₫</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">
+        <svg width="18" height="18" fill="none" stroke="var(--black)" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.5"/></svg>
+      </div>
+      <div class="feature-title">Đổi trả 30 ngày</div>
+      <div class="feature-sub">Không cần lý do</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">
+        <svg width="18" height="18" fill="none" stroke="var(--black)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="feature-title">Hàng chính hãng</div>
+      <div class="feature-sub">Xác thực 100%</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE 2: PRODUCT LIST
+══════════════════════════════════════════ -->
+<div id="page-products" class="page">
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Tất cả sản phẩm</h2>
+          <p style="font-size:13px;color:var(--gray-400);margin-top:6px;">Hiển thị 8 sản phẩm</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="font-size:12px;color:var(--gray-400);letter-spacing:.06em;text-transform:uppercase">Sắp xếp</span>
+          <select style="border:1px solid var(--gray-200);padding:8px 16px;font-family:var(--font-body);font-size:13px;background:var(--white);color:var(--black);cursor:pointer">
+            <option>Mặc định</option>
+            <option>Giá thấp → cao</option>
+            <option>Giá cao → thấp</option>
+            <option>Mới nhất</option>
+          </select>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:220px 1fr;gap:32px;align-items:start">
+        <!-- Filters -->
+        <div>
+          <div style="font-size:14px;font-weight:500;color:var(--black);margin-bottom:20px;letter-spacing:.04em">Bộ lọc</div>
+          <div style="margin-bottom:20px">
+            <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px">Danh mục</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="radio" name="cat" checked style="accent-color:var(--black)"> Tất cả</label>
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="radio" name="cat" style="accent-color:var(--black)"> Chạy bộ</label>
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="radio" name="cat" style="accent-color:var(--black)"> Lifestyle</label>
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="radio" name="cat" style="accent-color:var(--black)"> Skate</label>
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="radio" name="cat" style="accent-color:var(--black)"> Retro</label>
+            </div>
+          </div>
+          <div style="border-top:1px solid var(--gray-100);padding-top:20px;margin-bottom:20px">
+            <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px">Thương hiệu</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" checked style="accent-color:var(--black)"> Nike</label>
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" checked style="accent-color:var(--black)"> Adidas</label>
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" style="accent-color:var(--black)"> New Balance</label>
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" style="accent-color:var(--black)"> Vans</label>
+              <label style="font-size:13px;color:var(--gray-600);display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" style="accent-color:var(--black)"> Converse</label>
+            </div>
+          </div>
+          <div style="border-top:1px solid var(--gray-100);padding-top:20px;margin-bottom:20px">
+            <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px">Khoảng giá</div>
+            <div style="font-size:13px;color:var(--gray-600);margin-bottom:8px">500.000 ₫ — 3.000.000 ₫</div>
+            <input type="range" min="500000" max="3000000" value="3000000" style="width:100%;accent-color:var(--black)">
+          </div>
+          <button onclick="showToast('Đã đặt lại bộ lọc')" style="width:100%;padding:10px;border:1px solid var(--gray-200);background:transparent;font-family:var(--font-body);font-size:12px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;color:var(--gray-600);transition:all .2s">Đặt lại bộ lọc</button>
+        </div>
+        <!-- Grid -->
+        <div class="products" style="grid-template-columns:repeat(3,1fr)">
+          <div class="product-card" onclick="showPage('detail')">
+            <div class="product-img bg-gray"><span class="product-badge badge-new">Mới</span><button class="product-wish" onclick="event.stopPropagation();toggleWish(this)"><svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><svg width="110" height="70" viewBox="0 0 110 70"><g transform="rotate(-10 55 35)"><rect x="8" y="44" width="94" height="14" rx="5" fill="#111"/><rect x="5" y="31" width="100" height="15" rx="7" fill="#1a1a1a"/><path d="M18 31 C18 7 30 3 55 4 C80 3 92 11 92 31Z" fill="#222"/><rect x="30" y="10" width="38" height="2" rx="1" fill="#fff" opacity=".2"/><rect x="30" y="17" width="38" height="2" rx="1" fill="#fff" opacity=".15"/><rect x="30" y="24" width="38" height="2" rx="1" fill="#fff" opacity=".1"/></g></svg></div>
+            <div class="product-brand">Nike</div><div class="product-name">Air Runner Pro</div><div class="product-price-row"><span class="product-price">1.850.000 ₫</span></div>
+          </div>
+          <div class="product-card" onclick="showPage('detail')">
+            <div class="product-img bg-dark"><span class="product-badge badge-new">Mới</span><button class="product-wish" onclick="event.stopPropagation();toggleWish(this)"><svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><svg width="110" height="70" viewBox="0 0 110 70"><g transform="rotate(-10 55 35)"><rect x="8" y="44" width="94" height="14" rx="5" fill="#444"/><rect x="5" y="31" width="100" height="15" rx="7" fill="#555"/><path d="M18 31 C18 7 30 3 55 4 C80 3 92 11 92 31Z" fill="#666"/><rect x="30" y="10" width="38" height="2" rx="1" fill="#fff" opacity=".25"/><rect x="30" y="17" width="38" height="2" rx="1" fill="#fff" opacity=".2"/></g></svg></div>
+            <div class="product-brand">Adidas</div><div class="product-name">Ultraboost 5.0</div><div class="product-price-row"><span class="product-price">2.350.000 ₫</span></div>
+          </div>
+          <div class="product-card" onclick="showPage('detail')">
+            <div class="product-img bg-warm"><span class="product-badge badge-sale">-20%</span><button class="product-wish" onclick="event.stopPropagation();toggleWish(this)"><svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><svg width="110" height="70" viewBox="0 0 110 70"><g transform="rotate(-10 55 35)"><rect x="8" y="44" width="94" height="14" rx="5" fill="#633806"/><rect x="5" y="31" width="100" height="15" rx="7" fill="#854F0B"/><path d="M18 31 C18 7 30 3 55 4 C80 3 92 11 92 31Z" fill="#BA7517"/><rect x="30" y="10" width="38" height="2" rx="1" fill="#fff" opacity=".25"/><rect x="30" y="17" width="38" height="2" rx="1" fill="#fff" opacity=".2"/></g></svg></div>
+            <div class="product-brand">New Balance</div><div class="product-name">574 Classic</div><div class="product-price-row"><span class="product-price">1.480.000 ₫</span><span class="product-price-old">1.850.000 ₫</span></div>
+          </div>
+          <div class="product-card" onclick="showPage('detail')">
+            <div class="product-img bg-blue"><button class="product-wish" onclick="event.stopPropagation();toggleWish(this)"><svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><svg width="110" height="70" viewBox="0 0 110 70"><g transform="rotate(-10 55 35)"><rect x="8" y="44" width="94" height="14" rx="5" fill="#0C447C"/><rect x="5" y="31" width="100" height="15" rx="7" fill="#185FA5"/><path d="M18 31 C18 7 30 3 55 4 C80 3 92 11 92 31Z" fill="#378ADD"/><rect x="30" y="10" width="38" height="2" rx="1" fill="#fff" opacity=".3"/><rect x="30" y="17" width="38" height="2" rx="1" fill="#fff" opacity=".25"/></g></svg></div>
+            <div class="product-brand">Vans</div><div class="product-name">Old Skool Classic</div><div class="product-price-row"><span class="product-price">1.200.000 ₫</span></div>
+          </div>
+          <div class="product-card" onclick="showPage('detail')">
+            <div class="product-img" style="background:#EAF3DE"><button class="product-wish" onclick="event.stopPropagation();toggleWish(this)"><svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><svg width="110" height="70" viewBox="0 0 110 70"><g transform="rotate(-10 55 35)"><rect x="8" y="44" width="94" height="14" rx="5" fill="#27500A"/><rect x="5" y="31" width="100" height="15" rx="7" fill="#3B6D11"/><path d="M18 31 C18 7 30 3 55 4 C80 3 92 11 92 31Z" fill="#639922"/><rect x="30" y="10" width="38" height="2" rx="1" fill="#fff" opacity=".25"/><rect x="30" y="17" width="38" height="2" rx="1" fill="#fff" opacity=".2"/></g></svg></div>
+            <div class="product-brand">Converse</div><div class="product-name">Chuck Taylor Hi</div><div class="product-price-row"><span class="product-price">980.000 ₫</span></div>
+          </div>
+          <div class="product-card" onclick="showPage('detail')">
+            <div class="product-img" style="background:#FBEAF0"><span class="product-badge badge-sale">-15%</span><button class="product-wish" onclick="event.stopPropagation();toggleWish(this)"><svg width="14" height="14" fill="none" stroke="#111" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><svg width="110" height="70" viewBox="0 0 110 70"><g transform="rotate(-10 55 35)"><rect x="8" y="44" width="94" height="14" rx="5" fill="#72243E"/><rect x="5" y="31" width="100" height="15" rx="7" fill="#993556"/><path d="M18 31 C18 7 30 3 55 4 C80 3 92 11 92 31Z" fill="#D4537E"/><rect x="30" y="10" width="38" height="2" rx="1" fill="#fff" opacity=".25"/><rect x="30" y="17" width="38" height="2" rx="1" fill="#fff" opacity=".2"/></g></svg></div>
+            <div class="product-brand">Puma</div><div class="product-name">Suede Classic XXI</div><div class="product-price-row"><span class="product-price">1.105.000 ₫</span><span class="product-price-old">1.300.000 ₫</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE 3: PRODUCT DETAIL
+══════════════════════════════════════════ -->
+<div id="page-detail" class="page">
+  <section class="section-sm">
+    <div class="container" style="max-width:1200px">
+      <div class="detail-page">
+        <div class="detail-gallery">
+          <div class="gallery-main">
+            <div class="shoe-wrap">
+              <svg width="360" height="240" viewBox="0 0 360 240" fill="none">
+                <ellipse cx="180" cy="210" rx="148" ry="18" fill="#D3D1C7" opacity=".6"/>
+                <g transform="rotate(-12 180 120)">
+                  <rect x="44" y="154" width="272" height="28" rx="7" fill="#111"/>
+                  <rect x="38" y="126" width="284" height="32" rx="10" fill="#1a1a1a"/>
+                  <path d="M76 126 C76 58 116 44 180 46 C244 44 282 66 284 126Z" fill="#222"/>
+                  <rect x="118" y="60" width="74" height="3" rx="1.5" fill="#fff" opacity=".18"/>
+                  <rect x="118" y="72" width="74" height="3" rx="1.5" fill="#fff" opacity=".15"/>
+                  <rect x="118" y="84" width="74" height="3" rx="1.5" fill="#fff" opacity=".12"/>
+                  <rect x="118" y="96" width="74" height="3" rx="1.5" fill="#fff" opacity=".09"/>
+                  <path d="M232 106 L282 132" stroke="#fff" stroke-width="20" stroke-linecap="round" opacity=".04"/>
+                  <path d="M76 106 C72 116 70 128 70 142" stroke="#2a2a2a" stroke-width="2.5" fill="none"/>
+                  <path d="M278 84 C288 96 284 114 284 126" stroke="#2a2a2a" stroke-width="2.5" fill="none"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="gallery-thumbs">
+            <div class="thumb active" style="background:#fff">
+              <svg width="36" height="22" viewBox="0 0 36 22"><g transform="rotate(-10 18 11)"><rect x="2" y="13" width="32" height="6" rx="3" fill="#111"/><path d="M6 13 C6 3 11 1 18 1 C25 1 30 4 30 13Z" fill="#222"/><rect x="1" y="18" width="34" height="4" rx="2" fill="#1a1a1a"/></g></svg>
+            </div>
+            <div class="thumb b" onclick="toggleThumb(this)">
+              <svg width="36" height="22" viewBox="0 0 36 22"><g transform="rotate(-10 18 11)"><rect x="2" y="13" width="32" height="6" rx="3" fill="#888"/><path d="M6 13 C6 3 11 1 18 1 C25 1 30 4 30 13Z" fill="#999"/><rect x="1" y="18" width="34" height="4" rx="2" fill="#777"/></g></svg>
+            </div>
+            <div class="thumb c" onclick="toggleThumb(this)">
+              <svg width="36" height="22" viewBox="0 0 36 22"><g transform="rotate(-10 18 11)"><rect x="2" y="13" width="32" height="6" rx="3" fill="#378ADD"/><path d="M6 13 C6 3 11 1 18 1 C25 1 30 4 30 13Z" fill="#185FA5"/><rect x="1" y="18" width="34" height="4" rx="2" fill="#0C447C"/></g></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-info">
+          <div class="breadcrumb">Trang chủ <span>/</span> Nam <span>/</span> Chạy bộ</div>
+          <h1 class="detail-name">Air Runner Pro</h1>
+          <div class="detail-brand-tag">Nike · Bộ sưu tập 2025</div>
+          <div class="rating-row">
+            <div class="stars">
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span class="rating-text">4.0 · 128 đánh giá</span>
+          </div>
+
+          <div class="detail-price">1.850.000 ₫</div>
+
+          <div class="size-label">
+            <span>Chọn size</span>
+            <a>Hướng dẫn chọn size</a>
+          </div>
+          <div class="sizes">
+            <div class="size na">38</div>
+            <div class="size">39</div>
+            <div class="size active" onclick="selectSize(this)">40</div>
+            <div class="size" onclick="selectSize(this)">41</div>
+            <div class="size" onclick="selectSize(this)">42</div>
+            <div class="size" onclick="selectSize(this)">43</div>
+            <div class="size na">44</div>
+          </div>
+
+          <button class="add-btn" onclick="addToCart()">Thêm vào giỏ hàng</button>
+          <button class="wish-btn" onclick="showToast('Đã thêm vào danh sách yêu thích')">+ Yêu thích</button>
+
+          <div class="guarantees">
+            <div class="guarantee-item"><div class="g-dot"><div class="g-check"></div></div> Miễn phí vận chuyển toàn quốc</div>
+            <div class="guarantee-item"><div class="g-dot"><div class="g-check"></div></div> Đổi trả trong vòng 30 ngày</div>
+            <div class="guarantee-item"><div class="g-dot"><div class="g-check"></div></div> Hàng chính hãng 100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer (shown on all pages) -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">STRIDĒ</div>
+      <p class="footer-desc">Thương hiệu giày chính hãng hàng đầu Việt Nam. Tối giản, chất lượng, đẳng cấp.</p>
+      <div class="footer-social">
+        <div class="social-btn">f</div>
+        <div class="social-btn">in</div>
+        <div class="social-btn">tw</div>
+        <div class="social-btn">yt</div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Sản phẩm</h4>
+      <ul><li>Nam</li><li>Nữ</li><li>Trẻ em</li><li>Bộ sưu tập</li><li>Sale</li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hỗ trợ</h4>
+      <ul><li>Hướng dẫn chọn size</li><li>Chính sách đổi trả</li><li>Theo dõi đơn hàng</li><li>Vận chuyển</li><li>Liên hệ</li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Công ty</h4>
+      <ul><li>Giới thiệu</li><li>Blog</li><li>Tuyển dụng</li><li>Cửa hàng</li><li>Bảo mật</li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 STRIDĒ. Bảo lưu mọi quyền.</div>
+    <div class="footer-legal">
+      <a href="#">Điều khoản</a>
+      <a href="#">Bảo mật</a>
+      <a href="#">Cookie</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast notification -->
+<div class="toast" id="toast">
+  <div class="toast-dot"></div>
+  <span id="toast-msg">Đã thêm vào giỏ hàng</span>
+</div>
+
+<script>
+let cartCount = 0;
+
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.page-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  const tab = document.getElementById('tab-' + name);
+  if (tab) tab.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  return false;
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  document.getElementById('toast-msg').textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 2800);
+}
+
+function addToCart() {
+  cartCount++;
+  document.querySelector('.cart-count').textContent = cartCount;
+  showToast('Đã thêm Air Runner Pro vào giỏ hàng');
+}
+
+function toggleWish(btn) {
+  const svg = btn.querySelector('svg');
+  if (svg.getAttribute('fill') === 'none') {
+    svg.setAttribute('fill', '#111');
+    showToast('Đã thêm vào yêu thích');
+  } else {
+    svg.setAttribute('fill', 'none');
+    showToast('Đã xóa khỏi yêu thích');
+  }
+}
+
+function selectSize(el) {
+  document.querySelectorAll('.size:not(.na)').forEach(s => s.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function toggleThumb(el) {
+  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+});
+</script>
+</body>
+</html>
